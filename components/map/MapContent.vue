@@ -37,12 +37,6 @@ export default {
       ],
       locations: [
         {
-          name: 'Home',
-          address: '403 S. Main',
-          coords: [41.003380, -91.963700],
-          notes: 'We can add as many of these tokens as we\'d like. Let me know.',
-        },
-        {
           name: 'MIU Campus',
           address: '1112 Granville Avenue',
           coords: [41.022090, -91.965390],
