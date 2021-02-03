@@ -14,6 +14,9 @@ module.exports = {
         handwritten: ['Yusei Magic', 'sans-serif'],
         title: ['Fredoka One', 'sans-serif'],
       },
+      fontSize: {
+        piqeno: '1.075rem',
+      },
       zIndex: {
         top: 450,
       },

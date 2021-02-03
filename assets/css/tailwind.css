@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .das-icon-btn {
+    @apply text-green-600 border-2 border-green-600 rounded-md px-2 py-1 hover:text-green-200 hover:border-green-200 focus:text-green-200 focus:border-green-200 cursor-pointer;
+  }
+
+  .das-svg-icon {
+    @apply fill-current h-5;
+  }
+
+  .das-link {
+    @apply font-bold underline text-blue-500 hover:no-underline hover:text-blue-400 focus:no-underline focus:text-blue-400;
+  }
+}

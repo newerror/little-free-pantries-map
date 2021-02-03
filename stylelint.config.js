@@ -14,6 +14,7 @@ module.exports = {
           'apply',
           'variants',
           'responsive',
+          'layer',
           'screen',
         ],
       },
