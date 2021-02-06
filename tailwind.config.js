@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   purge: [
     './components/**/*.{vue,js}',
@@ -8,6 +10,11 @@ module.exports = {
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    screens: {
+      xs: '475px',
+      ...defaultTheme.screens,
+    },
+
     extend: {
       fontFamily: {
         body: ['Noto Sans', 'sans-serif'],
@@ -23,7 +30,11 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      borderColor: ['active'],
+      textColor: ['active'],
+      textDecoration: ['active'],
+    },
   },
   plugins: [],
 }

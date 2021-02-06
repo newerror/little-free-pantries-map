@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  p {
+    @apply font-body mb-4 text-gray-700;
+  }
+
+  a {
+    @apply font-bold underline text-blue-500 hover:no-underline hover:text-blue-400 focus:no-underline focus:text-blue-400 active:text-blue-400 active:no-underline;
+  }
+}
+
 @layer components {
   .das-icon-btn {
     @apply text-green-600 border-2 border-green-600 rounded-md px-2 py-1 hover:text-green-200 hover:border-green-200 focus:text-green-200 focus:border-green-200 cursor-pointer;
@@ -11,7 +21,7 @@
     @apply fill-current h-5;
   }
 
-  .das-link {
-    @apply font-bold underline text-blue-500 hover:no-underline hover:text-blue-400 focus:no-underline focus:text-blue-400;
+  .das-subheader {
+    @apply font-body font-bold text-gray-700;
   }
 }

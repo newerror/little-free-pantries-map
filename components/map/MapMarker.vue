@@ -2,21 +2,22 @@
   <l-marker :lat-lng="location.coords">
     <l-popup>
       <div class="w-64 text-center font-body">
-        <h3 class="text-xl font-bold -mb-4">
+        <h3 class="text-xl font-bold">
           {{ location.name }}
         </h3>
-        <p v-if="location.instructions" class="text-gray-400 italic font-bold text-piqeno">
+        <div v-if="location.instructions" class="text-gray-400 italic font-bold text-piqeno mb-0.5">
           {{ location.instructions }}
-        </p>
-        <p class="text-gray-500 text-lg -mb-4">
+        </div>
+        <div class="text-gray-500 text-lg">
           {{ location.address }}
-        </p>
-        <p v-if="location.notes" class="text-gray-400 italic">
+        </div>
+        <div v-if="location.notes" class="text-gray-400 italic">
           {{ location.notes }}
-        </p>
+        </div>
       </div>
     </l-popup>
-    <l-icon v-if="location.pending" :icon-size="iconSize" icon-url="/images/markers/pantry-map-marker-green.png" />
+
+    <l-icon v-if="location.pending" :icon-size="pendingIconSize" icon-url="/images/markers/coming-soon.png" />
     <l-icon v-else :icon-size="iconSize" icon-url="/images/markers/pantry-map-marker-green.png" />
   </l-marker>
 </template>
@@ -33,6 +34,7 @@ export default {
   data () {
     return {
       iconSize: [32, 40],
+      pendingIconSize: [81, 49],
     }
   },
 }

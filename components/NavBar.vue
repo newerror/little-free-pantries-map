@@ -7,9 +7,9 @@
         </nuxt-link>
       </div>
       <div class="flex flex-col items-center text-center">
-        <p class="text-sm md:text-lg text-green-100 font-handwritten">
+        <div class="text-sm md:text-lg text-green-100 font-handwritten">
           Fairfield
-        </p>
+        </div>
         <h1 class="text-lg md:text-3xl -mt-2 font-title text-green-600">
           Litte Free Pantries
         </h1>

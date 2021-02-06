@@ -24,7 +24,6 @@
 export default {
   data () {
     return {
-      info: false,
       bounds: [
         [40.92181441237853, -92.16166043260344],
         [41.06692773019345, -91.73937344529875],
@@ -71,12 +70,14 @@ export default {
         {
           name: 'Buchanan Ave',
           pending: true,
+          instructions: 'Coming Soon...',
           address: '401 East Buchanan Avenue',
           coords: [40.993824, -91.958076],
         },
         {
           name: 'Oakwood Drive',
           pending: true,
+          instructions: 'Coming Soon...',
           address: '1001 Oakwood Drive',
           coords: [40.996570, -91.979560],
         },
